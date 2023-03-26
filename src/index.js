@@ -10,11 +10,10 @@ class API{
         else this.#secure=false;
         return this.#secure;
     }
-    updateURL(url){
+    updateUrl(url){
         this.url=url;
     }
 }
-
 
 
 module.exports = { API }
