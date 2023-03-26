@@ -6,8 +6,12 @@ class API{
         this.url=url;
     }
     isSecure(){
-        if(this.url.includes("https")) return true;
-        return false;
+        if(this.url.includes("https")) this.#secure=true;
+        else this.#secure=false;
+        return this.#secure;
+    }
+    updateURL(url){
+        this.url=url;
     }
 }
 
